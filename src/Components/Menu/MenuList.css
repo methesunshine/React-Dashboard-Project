@@ -1,0 +1,39 @@
+/* General styles for the menu list */
+.menu-list {
+    list-style: none; /* Remove bullet points */
+    padding: 0;       /* Remove default padding */
+    margin: 0;        /* Remove default margin */
+  }
+  
+  /* Style for each menu link */
+  .menu-link {
+    display: flex;             /* Align icon and text horizontally */
+    align-items: center;       /* Vertically align items */
+    gap: 0.5rem;               /* Spacing between icon and text */
+    padding: 0.75rem 1.25rem;  /* Space around the link text */
+    text-decoration: none;     /* Remove underline */
+    color: #ffffff;            /* Link text color */
+    font-size: 1rem;           /* Font size for link */
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  /* Background and color change on hover */
+  .menu-link:hover {
+    background: #444444; /* Darker background on hover */
+    color: #0092ca;      /* Change text color on hover */
+  }
+  
+  /* Active state styling for the current route (optional) */
+  .menu-link.active {
+    background: #303030; /* Highlight active link */
+    color: #0092ca;      /* Gold color for active link */
+  }
+  
+  /* Sidebar responsiveness */
+  @media (max-width: 500px) {
+    .menu-link {
+      font-size: 0.875rem; /* Slightly smaller font size for mobile */
+      padding: 0.5rem 1rem; /* Adjust spacing for smaller screens */
+    }
+  }
+  
